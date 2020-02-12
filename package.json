@@ -1,0 +1,30 @@
+{
+  "name": "sievo",
+  "version": "1.0.0",
+  "description": "programming assignment for sievo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ignore-path .gitignore .",
+    "prettier": "prettier --ignore-path .gitignore  \"**/*.+(js|json)\"",
+    "format": "npm run prettier -- --write",
+    "check-format": "npm run prettier -- --list-different",
+    "validate": "npm run check-format && npm run lint"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Milad Moafi",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "husky": "^4.2.2",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1"
+  }
+}
